@@ -38,7 +38,7 @@ cell_params_spike_injector = {
 }
 
 # Creates a population that will receive spikes from the ethernet
-# The label value is important as it will be used to find the association 
+# The label value is important as it will be used to find the association
 # between neuron index and SpiNNaker key inside the database file created
 # when the board is programmed.
 pop_in = sim.Population(num_of_neurons,
@@ -63,7 +63,7 @@ sim.Projection(pop_in, pop_out,
 
 
 # Initialises the membrane voltage (x1E-3) for the neurons in pop_out
-pop_out.initialize("v", [0]*nNeurons)
+pop_out.initialize("v", [0]*num_of_neurons)
 
 
 # Starts the simulation inside SpiNNaker and runs it forever
