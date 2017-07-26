@@ -6,4 +6,7 @@ sudo lsof -i :8080
   
 Makes the default route the SpiNN-? board IP (the only way I've found to send and receive spikes using OSX after the board was programmed using Ubuntu):  
 sudo route -nv delete 0.0.0.0  
-sudo route -nv add 0.0.0.0 192.169.110.2
+sudo route -nv add 0.0.0.0 192.169.110.2  
+
+
+http://ricardodeazambuja.com/
